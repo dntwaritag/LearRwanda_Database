@@ -100,27 +100,23 @@ LearnRwanda is a cutting-edge mobile application designed to transform Rwanda’
 1. **User Data:**  
    - Only authenticated users can access their own data.  
    ```json
-   match /users/{userId} {
-     allow read, write: if request.auth.uid == userId;
-   }
+   ![User-access](https://github.com/user-attachments/assets/68efb3f7-1126-4994-96cb-93a6b8b3760b)
+
    ```
 
 2. **Lessons Data:**  
    - Readable by all authenticated users.  
    - Writable by admin users only.  
    ```json
-   match /lessons/{lessonId} {
-     allow read: if request.auth != null;
-     allow write: if request.auth.token.role == "admin";
-   }
+   ![Lesson_Access](https://github.com/user-attachments/assets/0fe4866b-9022-43ac-9465-98f2ddaa7428)
+
    ```
 
 3. **Progress Data:**  
    - Users can only access their own progress.  
    ```json
-   match /progress/{progressId} {
-     allow read, write: if request.auth.uid == resource.data.userId;
-   }
+   ![image](https://github.com/user-attachments/assets/ffada77b-b7f2-4cd1-9fb8-8dbf63208ef3)
+
    ```
 
 ---
