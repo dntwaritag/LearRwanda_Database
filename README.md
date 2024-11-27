@@ -3,7 +3,6 @@
 ## **Overview**  
 LearnRwanda is a cutting-edge mobile application designed to transform Rwanda’s education landscape. The app provides a comprehensive, equitable learning platform for students, teachers, parents, and government stakeholders. With offline learning resources, personalized learning paths, and dashboards for performance tracking, LearnRwanda empowers users to achieve educational excellence.  
 
----
 
 ## **Features**  
 ### **For Students:**  
@@ -19,14 +18,12 @@ LearnRwanda is a cutting-edge mobile application designed to transform Rwanda’
 - **Nationwide Monitoring:** Real-time insights into student performance and curriculum implementation.  
 - **Integration with National Goals:** Supports the Education Sector Strategic Plan (ESSP) and UN Sustainable Goal 4.  
 
----
 
 ## **Technology Stack**  
 - **Frontend:** Flutter (for cross-platform development on Android and iOS).  
 - **Backend:** Firebase (Firestore, Authentication, Cloud Storage).  
 - **Database:** Firestore (NoSQL).  
 
----
 
 ## **Setup Instructions**  
 ### **Prerequisites:**  
@@ -54,7 +51,6 @@ LearnRwanda is a cutting-edge mobile application designed to transform Rwanda’
    flutter run
    ```
 
----
 
 ## **Database Structure**  
 ### **Firestore Collections:**  
@@ -94,32 +90,23 @@ LearnRwanda is a cutting-edge mobile application designed to transform Rwanda’
    }
    ```
 
----
 
 ## **Security Rules**  
 1. **User Data:**  
    - Only authenticated users can access their own data.  
-   ```json
+  json
    ![User-access](https://github.com/user-attachments/assets/68efb3f7-1126-4994-96cb-93a6b8b3760b)
-
-   ```
 
 2. **Lessons Data:**  
    - Readable by all authenticated users.  
    - Writable by admin users only.  
-   ```json
+   json
    ![Lesson_Access](https://github.com/user-attachments/assets/0fe4866b-9022-43ac-9465-98f2ddaa7428)
-
-   ```
 
 3. **Progress Data:**  
    - Users can only access their own progress.  
-   ```json
+   json
    ![image](https://github.com/user-attachments/assets/ffada77b-b7f2-4cd1-9fb8-8dbf63208ef3)
-
-   ```
-
----
 
 ## **Key Features Implementation**  
 - **Authentication:**  
@@ -131,14 +118,11 @@ LearnRwanda is a cutting-edge mobile application designed to transform Rwanda’
 - **Interactive Modules:**  
   - Quizzes and gamified assessments for improved learning outcomes.  
 
----
 
 ## **Testing and Quality Assurance**  
 - **Beta Testing:** Conducted with students and teachers to refine usability.  
 - **Device Compatibility:** Tested on a range of Android and iOS devices.  
 - **Performance Optimization:** Offline caching and indexed queries for faster data retrieval.  
-
----
 
 ## **Future Enhancements**  
 1. Expand content to cover professional development for teachers.  
@@ -146,7 +130,6 @@ LearnRwanda is a cutting-edge mobile application designed to transform Rwanda’
 3. Launch in other East African markets with localized curricula.  
 4. Add push notifications for lesson reminders and updates.  
 
----
 
 ## **Contributing**  
 We welcome contributions to enhance LearnRwanda!  
@@ -166,7 +149,6 @@ We welcome contributions to enhance LearnRwanda!
    ```
 5. Submit a pull request.  
 
----
 
 ## **Contact**  
 - **Email:** (d.ntwaritag@alustudent.com)  
